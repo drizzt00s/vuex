@@ -23,7 +23,7 @@
 	"webpack-dev-server": "^1.14.1",
   "connect":"2.4.3",
   "express":"3.0.0rc4",
-  "fresh":"0.1.0",
+  "fresh":"0.1.0"
 
 	},
   "dependencies": {
