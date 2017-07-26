@@ -21,7 +21,7 @@
         <a v-for='list in lists' class="list-group-item" @click='changeAvtiveNote(list)' 
         :class="activeNote === list ? 'active' : '' ">
           <h4 class="list-group-item-heading">
-            {{list.listData}}
+            {{list.listData.trim().substring(0, 30)}}
           </h4>
         </a>
       </div>
@@ -32,6 +32,11 @@
 <script>
 import {changeAvtiveNote, showFavorites, showAllNotes} from '../vuex/action';
 export default{
+    data:function(){
+        return {
+     
+        }
+    },
     vuex:{
         getters:{
             lists:function(state){
